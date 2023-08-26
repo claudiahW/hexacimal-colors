@@ -45,6 +45,9 @@ font-family: 'Roboto Slab', serif;
     80%{
         color:red;
     }
-
-
 }
+@media(max-width:480px){
+    
+}
+
+
