@@ -4,7 +4,9 @@ function changeColor(){
     let hexcode = ''; //where the hexcode that we generate will go
 
     for(let i=0; i < 6;i++){       //the for loop will generate the code for us //since i<6 it will loop five times
-
-
+        let random_index= Math.floor(Math.random()*hex_numbers.length);
+        hexcode += hex_numbers[random_index]
     } 
+    document.getElementById("hex-code").innerHTML = hexcode;
+    document.getElementsByTagName("body")[0].style.background = "#" + hexcode;
 }
